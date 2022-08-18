@@ -68,7 +68,6 @@ kernel/crypto/xor.ko: kernel/arch/arm64/lib/xor-neon.ko
 kernel/arch/arm64/lib/xor-neon.ko:
 kernel/lib/crypto/libchacha.ko:
 kernel/lib/crypto/libpoly1305.ko:
-kernel/lib/crc-ccitt.ko:
 kernel/lib/libcrc32c.ko:
 kernel/lib/raid6/raid6_pq.ko:
 kernel/drivers/gpio/gpio-regmap.ko:
@@ -185,6 +184,8 @@ kernel/drivers/net/can/dev/can-dev.ko:
 kernel/drivers/net/can/flexcan.ko: kernel/drivers/net/can/dev/can-dev.ko
 kernel/drivers/net/xen-netback/xen-netback.ko:
 kernel/drivers/usb/serial/cp210x.ko:
+kernel/drivers/usb/serial/option.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/usb_wwan.ko:
 kernel/drivers/usb/misc/usbtest.ko:
 kernel/drivers/usb/gadget/legacy/g_zero.ko:
 kernel/drivers/usb/gadget/legacy/g_audio.ko:
@@ -195,6 +196,7 @@ kernel/drivers/usb/gadget/legacy/g_serial.ko:
 kernel/drivers/usb/typec/tcpm/fusb302.ko:
 kernel/drivers/usb/typec/hd3ss3220.ko:
 kernel/drivers/usb/class/cdc-acm.ko:
+kernel/drivers/usb/class/cdc-wdm.ko:
 kernel/drivers/input/keyboard/adc-keys.ko:
 kernel/drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_i2c.ko:
 kernel/drivers/input/touchscreen/atmel_mxt_ts.ko:

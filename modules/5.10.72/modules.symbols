@@ -119,6 +119,7 @@ alias symbol:drm_gem_vram_plane_helper_cleanup_fb drm_vram_helper
 alias symbol:dib7000p_attach dib7000p
 alias symbol:pcm3168a_pm_ops snd_soc_pcm3168a
 alias symbol:tda9887_attach tda9887
+alias symbol:usb_wwan_get_serial_info usb_wwan
 alias symbol:snvs_secvio_install_handler secvio
 alias symbol:af_alg_make_sg af_alg
 alias symbol:md_register_thread md_mod
@@ -128,6 +129,7 @@ alias symbol:sm_release_keystore caam_jr
 alias symbol:snd_sof_dsp_update_bits64_unlocked snd_sof
 alias symbol:mlx4_get_is_vlan_offload_disabled mlx4_core
 alias symbol:mlx5_core_query_vport_counter mlx5_core
+alias symbol:usb_wwan_set_serial_info usb_wwan
 alias symbol:af_alg_free_resources af_alg
 alias symbol:ath9k_hw_beaconq_setup ath9k_hw
 alias symbol:ath9k_hw_setpower ath9k_hw
@@ -406,7 +408,6 @@ alias symbol:ipmi_add_smi ipmi_msghandler
 alias symbol:chacha_init_arch chacha_neon
 alias symbol:can_rx_offload_irq_offload_fifo can_dev
 alias symbol:nf_conntrack_locks nf_conntrack
-alias symbol:crc_ccitt_false crc_ccitt
 alias symbol:ttm_bo_validate ttm
 alias symbol:dm_rh_get_region_key dm_region_hash
 alias symbol:nfc_fw_download_done nfc
@@ -443,6 +444,7 @@ alias symbol:ttm_tt_set_placement_caching ttm
 alias symbol:tpd_i2c_write_data synaptics_dsx_i2c
 alias symbol:wlcore_event_soft_gemini_sense wlcore
 alias symbol:poly1305_final_generic libpoly1305
+alias symbol:usb_wwan_tiocmget usb_wwan
 alias symbol:ipmi_request_supply_msgs ipmi_msghandler
 alias symbol:gspca_resume gspca_main
 alias symbol:mlx5_cmd_exec_cb mlx5_core
@@ -623,6 +625,7 @@ alias symbol:brcmu_pktq_penq_head brcmutil
 alias symbol:mlx4_unicast_promisc_add mlx4_core
 alias symbol:mlx4_get_slave_pkey_gid_tbl_len mlx4_core
 alias symbol:cnstr_shdsc_sk_hash caamhash_desc
+alias symbol:usb_wwan_close usb_wwan
 alias symbol:ath9k_hw_gpio_free ath9k_hw
 alias symbol:drm_sched_suspend_timeout gpu_sched
 alias symbol:__devm_regmap_init_spmi_base regmap_spmi
@@ -801,6 +804,7 @@ alias symbol:mlx5_set_port_tc_group mlx5_core
 alias symbol:ath9k_hw_set_gpio ath9k_hw
 alias symbol:cros_ec_sensors_push_data cros_ec_sensors_core
 alias symbol:ip_tunnel_setup ip_tunnel
+alias symbol:usb_wwan_chars_in_buffer usb_wwan
 alias symbol:snd_usbmidi_suspend snd_usbmidi_lib
 alias symbol:hisi_qm_sriov_disable hisi_qm
 alias symbol:wlcore_synchronize_interrupts wlcore
@@ -821,7 +825,6 @@ alias symbol:nf_nat_helper_try_module_get nf_conntrack
 alias symbol:ath9k_hw_reset ath9k_hw
 alias symbol:ipmi_set_gets_events ipmi_msghandler
 alias symbol:md_set_array_sectors md_mod
-alias symbol:crc_ccitt crc_ccitt
 alias symbol:dib0070_set_rf_output dib0070
 alias symbol:hwrng_unregister rng_core
 alias symbol:xt_hook_ops_alloc x_tables
@@ -847,6 +850,7 @@ alias symbol:m88ds3103_get_agc_pwm m88ds3103
 alias symbol:mlx5_modify_header_dealloc mlx5_core
 alias symbol:snd_usbmidi_input_stop snd_usbmidi_lib
 alias symbol:poly1305_core_blocks libpoly1305
+alias symbol:usb_wwan_port_remove usb_wwan
 alias symbol:can_put_echo_skb can_dev
 alias symbol:nf_ct_helper_expectfn_register nf_conntrack
 alias symbol:tpd_i2c_read_data synaptics_dsx_i2c
@@ -866,6 +870,7 @@ alias symbol:mlx4_phys_to_slaves_pport mlx4_core
 alias symbol:dib9000_fw_pid_filter dib9000
 alias symbol:gspca_coarse_grained_expo_autogain gspca_main
 alias symbol:mlx4_bond mlx4_core
+alias symbol:usb_wwan_tiocmset usb_wwan
 alias symbol:ath9k_hw_get_txq_props ath9k_hw
 alias symbol:can_rx_offload_get_echo_skb can_dev
 alias symbol:mlx5_fc_query mlx5_core
@@ -1049,6 +1054,7 @@ alias symbol:tea5761_attach tea5761
 alias symbol:xc2028_attach tuner_xc2028
 alias symbol:mlx5_core_query_vendor_id mlx5_core
 alias symbol:s3fwrn5_remove s3fwrn5
+alias symbol:usb_cdc_wdm_register cdc_wdm
 alias symbol:__bcm_phy_read_rdb bcm_phy_lib
 alias symbol:ath_gen_timer_alloc ath9k_hw
 alias symbol:mc44s803_attach mc44s803
@@ -1178,10 +1184,12 @@ alias symbol:sdw_prepare_stream soundwire_bus
 alias symbol:ath9k_hw_gpio_get ath9k_hw
 alias symbol:qcom_vadc_scale qcom_vadc_common
 alias symbol:fuse_sync_release fuse
+alias symbol:usb_wwan_dtr_rts usb_wwan
 alias symbol:caam_jr_free caam_jr
 alias symbol:ath9k_cmn_init_crypto ath9k_common
 alias symbol:xor_blocks xor
 alias symbol:ar9003_mci_setup ath9k_hw
+alias symbol:usb_wwan_suspend usb_wwan
 alias symbol:dm_get_reserved_rq_based_ios dm_mod
 alias symbol:mlx5_query_port_admin_status mlx5_core
 alias symbol:mlx5_core_query_sq_state mlx5_core
@@ -1311,6 +1319,7 @@ alias symbol:cnstr_shdsc_skcipher_encap caamalg_desc
 alias symbol:af_alg_accept af_alg
 alias symbol:gspca_frame_add gspca_main
 alias symbol:ath_is_world_regd ath
+alias symbol:usb_wwan_write usb_wwan
 alias symbol:ath9k_hw_btcoex_bt_stomp ath9k_hw
 alias symbol:sdw_clear_slave_status soundwire_bus
 alias symbol:__bcm_phy_write_rdb bcm_phy_lib
@@ -1324,6 +1333,7 @@ alias symbol:itd1000_attach itd1000
 alias symbol:ttm_bo_eviction_valuable ttm
 alias symbol:mlx5_unregister_interface mlx5_core
 alias symbol:nfc_unregister_device nfc
+alias symbol:usb_wwan_resume usb_wwan
 alias symbol:ath_key_config ath
 alias symbol:mdio45_probe mdio
 alias symbol:nf_ct_l4proto_find nf_conntrack
@@ -1477,6 +1487,7 @@ alias symbol:fuse_len_args fuse
 alias symbol:mlx4_update_qp mlx4_core
 alias symbol:ttm_unmap_and_unpopulate_pages ttm
 alias symbol:is_key_type caam_jr
+alias symbol:usb_wwan_open usb_wwan
 alias symbol:ip_tunnel_rcv ip_tunnel
 alias symbol:mlx5_rl_add_rate mlx5_core
 alias symbol:tea5767_autodetection tea5767
@@ -1562,6 +1573,7 @@ alias symbol:sof_compressed_ops snd_sof
 alias symbol:ttm_bo_vm_reserve ttm
 alias symbol:btrtl_initialize btrtl
 alias symbol:dib9000_fw_set_component_bus_speed dib9000
+alias symbol:usb_wwan_write_room usb_wwan
 alias symbol:btintel_exit_mfg btintel
 alias symbol:fpga_region_free fpga_region
 alias symbol:nf_nat_ipv4_register_fn nf_nat
@@ -1802,7 +1814,6 @@ alias symbol:call_dsa_notifiers dsa_core
 alias symbol:dpaa2_caam_enqueue dpaa2_caam
 alias symbol:__serpent_encrypt serpent_generic
 alias symbol:dsa_devlink_resources_unregister dsa_core
-alias symbol:crc_ccitt_false_table crc_ccitt
 alias symbol:brcmu_pktq_mlen brcmutil
 alias symbol:tda8261_attach tda8261
 alias symbol:fpga_bridge_unregister fpga_bridge
@@ -1913,6 +1924,7 @@ alias symbol:mlx5_query_hca_vport_system_image_guid mlx5_core
 alias symbol:nci_unregister_device nci
 alias symbol:poly1305_init_generic libpoly1305
 alias symbol:devm_rc_register_device rc_core
+alias symbol:usb_wwan_port_probe usb_wwan
 alias symbol:crypto_sm3_update sm3_generic
 alias symbol:is_trusted_type caam_jr
 alias symbol:nf_ct_bridge_unregister nf_conntrack
@@ -1944,7 +1956,6 @@ alias symbol:snd_sof_debugfs_buf_item snd_sof
 alias symbol:dm_get_table_device dm_mod
 alias symbol:ath9k_hw_init ath9k_hw
 alias symbol:snvs_secvio_remove_handler secvio
-alias symbol:crc_ccitt_table crc_ccitt
 alias symbol:__serpent_setkey serpent_generic
 alias symbol:mlx5_set_port_prio_tc mlx5_core
 alias symbol:sdw_bus_master_delete soundwire_bus
